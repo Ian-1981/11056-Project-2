@@ -1,0 +1,385 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo img {
+    height: 100px; /* adjust height as needed */
+  }
+  
+  .header__title h1 {
+    margin: 0;
+  }
+  
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__nav li {
+    margin-left: 1rem;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header__nav a:hover {
+    text-decoration: underline;
+  }
+
+
+  /*
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo__image {
+    height: 50px; 
+    width: auto;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  
+  .header__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__nav li {
+    margin-left: 20px;
+  }
+  
+  .header__nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+  }
+  
+  .header__nav a:hover {
+    color: #f00;
+  }
+  */
+
+
+  /* Main styles */
+  .text-section {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    padding: 30px;
+  }
+  
+  .section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .section-heading {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .section-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .section-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Hero image */
+  .hero {
+    margin: 0;
+  }
+  
+  .hero-image {
+    height: 300px;
+    margin: 0;
+    background-image: url("../11056-Project 2/assets/images/Brewery_2_banner.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .left-column, .middle-column, .right-column {
+    width: 30%;
+    padding: 0 20px;
+  }
+  
+  .left-column h3, .middle-column h3, .right-column h3 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left-column p, .middle-column ul, .right-column p {
+    color: #888;
+    font-size: 1rem;
+  }
+  
+  .middle-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .middle-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .middle-column a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .middle-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .right-column p {
+    margin-top: 0;
+  }
+  
+  .right-column form {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-column input[type="email"] {
+    width: 60%;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    margin-right: -4px; /* to remove gap between input and button */
+  }
+  
+  .right-column button[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .right-column button[type="submit"]:hover {
+    background-color: #f00;
+  }
+  
+  @media only screen and (max-width: 768px) {
+
+
+    /* Responsive body and header styles */
+    
+    .main-container {
+        display: grid;
+        grid-template-columns:1fr;
+        grid-column-gap: 30px;
+        padding: 30px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    
+      header nav {
+        margin-top: 10px;
+      }
+    
+      header nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+     /* Responsive Footer styles */
+footer {
+ 
+    padding: 20px 10px;
+  }
+  
+  .footer-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-column, .middle-column, .right-column {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  .left-column h3, .middle-column h3, .right-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left-column p, .middle-column ul, .right-column p {
+    font-size: 0.9rem;
+  }
+  
+  .middle-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .middle-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .middle-column a {
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .middle-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right-column p {
+    margin-top: 0;
+  }
+  
+  .right-column form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-column input[type="email"] {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+
+  }
+  
+  .right-column button[type="submit"] {
+
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+    }
+
+  
+
+  
